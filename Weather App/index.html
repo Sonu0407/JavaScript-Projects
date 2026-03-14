@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="src/input.css">
+</head>
+<body class="dark:bg-gray-800">
+    <div class="bg-[url(images/cloudy-sky-60.jpg)] object-none card grid place-content-center h-screen">
+        <div class="search bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% px-18 py-10 rounded-lg max-w-lg">
+            <div class="flex">
+                <input class="text-black font-semibold text-[18px] border-0 outline-0 text-center bg-white rounded-4xl mr-2 px-15 py-2" type="text" placeholder="Enter the city name" spellcheck="false">
+                <button class="bg-white border-0 outline-0 rounded-full cursor-pointer"></button>
+                <img class="bg-white w-10 rounded-lg p-2.5" src="images/search.png">
+            </div>
+            <div class="weather grid place-content-center text-center">
+                <img src="images/rain.png" class="weather-icon">
+                <h1 class="temp">22*c</h1>
+                <h2 class="city">New York</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--h-14 bg-linear-to-r from-cyan-500 to-blue-500-->
