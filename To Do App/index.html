@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-linear-to-r/longer from-indigo-500 to-teal-400 font-mono italic">
+<!-- first step is build a nav bar -->
+    <nav class="max-w-full h-15 bg-gray-800 font-semibold text-white text-2xl content-center">
+        <ul class="flex justify-between cursor-pointer mx-6">
+            <li class="bg">Home</li>
+            <li class="bg">Productivity App</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <!-- Now let me design the rest of the background to good looking image -->
+    <!-- okay that's done  -->
+     <!-- now i will create a ui where i will store my tasks -->
+    
+     <!-- this for task entery -->
+      <div class="max-w-full h-80 bg-white mt-2 mx-5 rounded-lg flex-row justify-start content-start text-center">
+        <h1 class="text-2xl mt-2">Enter your task below and Set the Bet and the timer to complete it.</h1>
+        <!-- // for entering task -->
+         <input class="h-15 w-5xl relative mt-15 p-6 rounded-lg border-3 text-black bg-amber-300 text-2xl" type="text" id="task_input" placeholder="Enter the Task">
+
+        <!-- this for the button -->
+         <div>
+            <button id="add-button" class="absolute bottom-128 left-295 text-white rounded-full text-2xl bg-red-500 p-1 px-6">Add</button>
+         </div>
+
+         <!-- pop-up content page -->
+          <!-- <div id="pop-up-window" class="bg-gray-800 absolute bottom-45 left-100 max-w-full w-3xl max-h-full h-100 text-white">
+            <h1 class="text-3xl mt-10 font-medium">Enter Your Bet Amount And Set Your Timer</h1>
+            <div id="close-icon" class="absolute bottom-90 left-183 text-2xl"><i class="fa-solid fa-xmark"></i></div>
+            <div class="mt-6 text-2xl" id="money-compounding">Money Multiplyer//SET AFTER</div>
+            <input class="bg-white text-black mt-10 w-145 p-3 rounded-lg" type="text" id="bet-input" placeholder="Your Bet?">
+            <div class="timer flex text-5xl justify-center mt-4">
+                <h1 class="text-2xl content-center mx-2">Set Time:</h1>
+                <p>00</p>
+                :
+                <p>00</p>
+                :
+                <p>00</p>
+            </div>
+            <div>
+                <button class="mt-8 text-2xl bg-sky-400 text-gray-800 p-4 px-10 rounded-lg">Start</button>
+            </div>
+          </div> -->
+      </div>
+
+      <!-- In this section i am display the score or the amount -->
+       <div class="bg-white mt-5 mx-2 rounded-lg max-w-full h-79 max-h-80 grid grid-cols-3 gap-8">
+            <!-- each task display -->
+             <div class="bg-gray-800 w-120 h-79 rounded-xl text-white text-center text-2xl">
+                
+                <h1 class="mt-1.5">📋 Task's Here</h1>
+
+                <div class="flex place-items-center ml-6 mt-4">
+                    <input class="mx-2 scale-150" type="checkbox" id="display-task">
+                    <label for="display-task">Task One</label>
+                </div>
+                <div class="flex place-items-center ml-6 mt-4">
+                    <input class="mx-2 scale-150" type="checkbox" id="display-task">
+                    <label for="display-task">Task Two</label>
+                </div>
+                <div class="flex place-items-center ml-6 mt-4">
+                    <input class="mx-2 scale-150" type="checkbox" id="display-task">
+                    <label for="display-task">Task Three</label>
+                </div>
+             </div>
+             <div class="bg-gray-800 w-120 h-79 ml-1 rounded-xl text-white text-center text-2xl">
+                <div class="max-w-lg">
+                    <h1 class="mt-1.5">⏱ Timer</h1>
+                </div>
+                <div id="timings" class="time flex justify-center h-50 items-center">
+                    <p class="text-6xl">00:00:00</p>
+                    
+                </div>
+                <div>
+                    <button class="bg-yellow-500 text-black p-4 px-4 rounded-lg">Finish Task<button>
+                </div>
+             </div>
+             <div class="bg-gray-800 w-120 h-79 ml-1 rounded-xl text-white text-center text-2xl space-y-4">
+                <div>
+                    <h1 class="mt-1.5">💰 Your Wallet Balance</h1>
+                </div>
+                <div class="bg-white text-black text-3xl mt-10 p-4 w-100 flex justify-center mx-auto rounded-lg">
+                    <h1>Wallet: 100$</h1>
+                </div>
+                <div class="mt-6 font-bold">
+                    <h1 class="mb-4 flex justify-center mx-auto">Total Bet Won: <p class="text-green-400    ">10</p></h1>
+                    <h1 class="mb-4 flex justify-center mx-auto">Total Bet Losed: <p class="text-red-500">10</p></h1>
+                </div>
+             </div>
+       </div>
+       <script src="script.js"></script>
+</body>
+</html>
